@@ -6,32 +6,31 @@ import org.openqa.selenium.WebDriver;
 
 public class PageFactory {
 
-    WebDriver webDriver;
-    public ChangeAble goToPage(String page)
+    public static ChangeAble goToPage(String page, WebDriver driver)
     {
         switch(page)
         {
             case "new":
-                webDriver.findElement(By.linkText("new")).click();
-                return new New(webDriver);
+                driver.findElement(By.linkText("new")).click();
+                return new New(driver);
             case "comments":
-                webDriver.findElement(By.linkText("comments")).click();
-                return new Comments(webDriver);
+                driver.findElement(By.linkText("comments")).click();
+                return new Comments(driver);
             case "ask":
-                webDriver.findElement(By.linkText("ask")).click();
-                return new Ask(webDriver);
+                driver.findElement(By.linkText("ask")).click();
+                return new Ask(driver);
             case "past":
-                webDriver.findElement(By.linkText("past")).click();
-                return new Past(webDriver);
+                driver.findElement(By.linkText("past")).click();
+                return new Past(driver);
             case "show":
-                webDriver.findElement(By.linkText("show")).click();
-                return new Show(webDriver);
+                driver.findElement(By.linkText("show")).click();
+                return new Show(driver);
             case "jobs":
-                webDriver.findElement(By.linkText("jobs")).click();
-                return new Jobs(webDriver);
+                driver.findElement(By.linkText("jobs")).click();
+                return new Jobs(driver);
             case "submit":
-                webDriver.findElement(By.linkText("submit")).click();
-                return new Submit(webDriver);
+                driver.findElement(By.linkText("submit")).click();
+                return new Submit(driver);
         }
         return null;
     }

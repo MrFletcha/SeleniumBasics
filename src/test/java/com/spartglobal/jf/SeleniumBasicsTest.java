@@ -1,6 +1,7 @@
 package com.spartglobal.jf;
 
 import com.spartglobal.jf.pom.HomePage;
+import com.spartglobal.jf.pom.PageFactory;
 import com.spartglobal.jf.pom.pages.New;
 import com.spartglobal.jf.pom.pages.Past;
 import org.junit.jupiter.api.*;
@@ -37,14 +38,14 @@ public class SeleniumBasicsTest {
     @DisplayName("Bring it all down")
     static void tearDown()
     {
-        //webDriver.quit();
+        webDriver.quit();
     }
 
     @ParameterizedTest
     @DisplayName("Web Driver Test")
     @ValueSource(strings = "new")
     void webDriverTest(String string) {
-        New nPage = (New)homePage.goToPage(string);
+        New nPage = (New) PageFactory.goToPage(string, webDriver);
         Assertions.assertEquals("https://news.ycombinator.com/newest", nPage.getNew());
     }
 
@@ -82,11 +83,12 @@ public class SeleniumBasicsTest {
         Assertions.assertTrue(past.isCorrectDate(string));
     }
 
-    @Test
+    @ParameterizedTest
     @DisplayName("Correct date value at top of Page")
-    void correctDateValueAtTopOfPage() {
+    @ValueSource(strings = {"month", "day", "year"})
+    void correctDateValueAtTopOfPage(String string) {
         Past past = (Past)homePage.goToPage("past");
-        Assertions.assertTrue(past.isCorrectStoriesDate());
+        Assertions.assertTrue(past.isCorrectStoriesDate(string));
     }
 
     @Test
