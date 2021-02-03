@@ -1,6 +1,6 @@
 package com.spartglobal.jf.pom.pages;
 
-import com.spartglobal.jf.pom.ChangeAble;
+import com.spartglobal.jf.pom.factory.ChangeAble;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

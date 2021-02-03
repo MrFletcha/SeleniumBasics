@@ -1,15 +1,11 @@
 package com.spartglobal.jf.pom.pages;
 
-import com.spartglobal.jf.pom.ChangeAble;
+import com.spartglobal.jf.pom.factory.ChangeAble;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import java.nio.charset.StandardCharsets;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
 
 public class Past implements ChangeAble {
 

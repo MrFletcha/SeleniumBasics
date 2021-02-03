@@ -4,18 +4,17 @@ import com.spartglobal.jf.pom.factory.ChangeAble;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Submit implements ChangeAble {
+public class HomePage implements ChangeAble {
 
-    WebDriver webDriver;
+    private WebDriver webDriver;
 
-    public Submit(WebDriver driver)
+    public HomePage(WebDriver driver)
     {
-        this.webDriver = driver;
+        webDriver = driver;
     }
 
-    public String getSubmit()
-    {
-        return webDriver.getCurrentUrl();
+    public WebDriver getWebDriver() {
+        return webDriver;
     }
 
     @Override

@@ -1,370 +1,109 @@
 [
   {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2021-02-02T14:23:04.822Z",
-        "line": 10,
-        "name": "Adding two numbers to see the result",
-        "description": "",
-        "id": "the-calculator-can-add-two-numbers-together;adding-two-numbers-to-see-the-result;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2183000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have a calculator",
-            "match": {
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iHaveACalculator()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 572000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I add 1 and 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 6
-                },
-                {
-                  "val": "1",
-                  "offset": 12
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iAddAnd(int,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2927000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I will get 2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 11
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iWillGet(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tag1"
-          },
-          {
-            "name": "@tag2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-02T14:23:04.907Z",
-        "line": 11,
-        "name": "Adding two numbers to see the result",
-        "description": "",
-        "id": "the-calculator-can-add-two-numbers-together;adding-two-numbers-to-see-the-result;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 196000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have a calculator",
-            "match": {
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iHaveACalculator()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 163000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I add 3 and 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 6
-                },
-                {
-                  "val": "4",
-                  "offset": 12
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iAddAnd(int,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 137000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I will get 7",
-            "match": {
-              "arguments": [
-                {
-                  "val": "7",
-                  "offset": 11
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iWillGet(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tag1"
-          },
-          {
-            "name": "@tag2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-02T14:23:04.914Z",
-        "line": 12,
-        "name": "Adding two numbers to see the result",
-        "description": "",
-        "id": "the-calculator-can-add-two-numbers-together;adding-two-numbers-to-see-the-result;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 223000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have a calculator",
-            "match": {
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iHaveACalculator()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 892000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I add 0 and 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 6
-                },
-                {
-                  "val": "1",
-                  "offset": 12
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iAddAnd(int,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 245000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I will get 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 11
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iWillGet(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tag1"
-          },
-          {
-            "name": "@tag2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-02T14:23:04.923Z",
-        "line": 13,
-        "name": "Adding two numbers to see the result",
-        "description": "",
-        "id": "the-calculator-can-add-two-numbers-together;adding-two-numbers-to-see-the-result;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 136000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have a calculator",
-            "match": {
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iHaveACalculator()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 169000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I add 12 and 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "12",
-                  "offset": 6
-                },
-                {
-                  "val": "1",
-                  "offset": 13
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iAddAnd(int,int)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 132000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I will get 13",
-            "match": {
-              "arguments": [
-                {
-                  "val": "13",
-                  "offset": 11
-                }
-              ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iWillGet(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tag1"
-          },
-          {
-            "name": "@tag2"
-          }
-        ]
-      }
-    ],
-    "name": "The calculator can add two numbers together",
-    "description": "",
-    "id": "the-calculator-can-add-two-numbers-together",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/addTwoNumbers.feature",
-    "tags": [
-      {
-        "name": "@tag1",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
     "line": 4,
     "elements": [
       {
-        "start_timestamp": "2021-02-02T14:23:04.929Z",
-        "line": 6,
-        "name": "Adding over the range of an int",
+        "start_timestamp": "2021-02-03T00:09:52.501Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2665000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.spartglobal.jf.cucumber.stepdefs.CRUDdef.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1462171000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.spartglobal.jf.cucumber.stepdefs.pastStepDef.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Check correct ratings are on page",
         "description": "",
-        "id": "the-calculator-can-handle-boundary-values;adding-over-the-range-of-an-int",
+        "id": "past-page-functionality;check-correct-ratings-are-on-page",
+        "after": [
+          {
+            "result": {
+              "duration": 78388000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.spartglobal.jf.cucumber.stepdefs.pastStepDef.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 283000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"past\"}\n  (Session info: chrome\u003d88.0.4324.96)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027UNKNOWN\u0027, ip: \u0027fd0d:e6ab:a164:1:2042:c1de:15e8:9d1%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002711.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.96, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/dl/lhjnrq7x4nx...}, goog:chromeOptions: {debuggerAddress: localhost:58231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b99c307f5004ea6fab158e0488826d94\n*** Element info: {Using\u003dlink text, value\u003dpast}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.spartglobal.jf.cucumber.stepdefs.pastStepDef.iOpenThePage(pastStepDef.java:46)\n\tat ✽.I open the \"past\" page(file:///Users/fletch/Documents/GitHub/SeleniumBasics/src/test/resources/features/pastPage.feature:25)\n",
+              "duration": 27546000,
+              "status": "failed"
             },
-            "line": 7,
-            "name": "I have a calculator",
+            "line": 25,
+            "name": "I open the \"past\" page",
             "match": {
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iHaveACalculator()"
+              "arguments": [
+                {
+                  "val": "\"past\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.spartglobal.jf.cucumber.stepdefs.pastStepDef.iOpenThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 287000,
-              "status": "passed"
+              "duration": 177000,
+              "status": "skipped"
             },
-            "line": 8,
-            "name": "I add Integer.max and Integer.max",
+            "line": 26,
+            "name": "I count the number of ratings on the page",
             "match": {
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iAddIntegerMaxAndIntegerMax()"
+              "location": "com.spartglobal.jf.cucumber.stepdefs.pastStepDef.iCountTheNumberOfRatingsOnThePage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 217000,
-              "status": "passed"
+              "duration": 154000,
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "I will get -2",
+            "line": 27,
+            "name": "The count should always be 30",
             "match": {
               "arguments": [
                 {
-                  "val": "-2",
-                  "offset": 11
+                  "val": "30",
+                  "offset": 27
                 }
               ],
-              "location": "com.spartglobal.jf.cucumber.stepdefs.MyStepdefs.iWillGet(int)"
+              "location": "com.spartglobal.jf.cucumber.stepdefs.pastStepDef.theCountShouldAlwaysBe(int)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@totalRatingsOnPage"
           }
         ]
       }
     ],
-    "name": "The Calculator can handle boundary values",
+    "name": "Past page functionality",
     "description": "",
-    "id": "the-calculator-can-handle-boundary-values",
+    "id": "past-page-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/boundaryValues.feature",
+    "uri": "file:src/test/resources/features/pastPage.feature",
     "tags": []
   }
 ]

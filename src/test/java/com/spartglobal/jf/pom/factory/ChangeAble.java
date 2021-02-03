@@ -1,4 +1,4 @@
-package com.spartglobal.jf.pom;
+package com.spartglobal.jf.pom.factory;
 
 import org.openqa.selenium.By;
 

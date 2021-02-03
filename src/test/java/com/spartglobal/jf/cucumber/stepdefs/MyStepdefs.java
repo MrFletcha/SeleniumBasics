@@ -1,7 +1,6 @@
 package com.spartglobal.jf.cucumber.stepdefs;
 
 import com.spartglobal.jf.Calculator;
-import com.spartglobal.jf.pom.ChangeAble;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

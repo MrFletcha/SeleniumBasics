@@ -1,7 +1,7 @@
 package com.spartglobal.jf;
 
-import com.spartglobal.jf.pom.HomePage;
-import com.spartglobal.jf.pom.PageFactory;
+import com.spartglobal.jf.pom.pages.HomePage;
+import com.spartglobal.jf.pom.factory.PageFactory;
 import com.spartglobal.jf.pom.pages.New;
 import com.spartglobal.jf.pom.pages.Past;
 import org.junit.jupiter.api.*;
@@ -14,9 +14,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -46,6 +43,7 @@ public class SeleniumBasicsTest {
     @ValueSource(strings = "new")
     void webDriverTest(String string) {
         New nPage = (New) PageFactory.goToPage(string, webDriver);
+        assert nPage != null;
         Assertions.assertEquals("https://news.ycombinator.com/newest", nPage.getNew());
     }
 
@@ -62,7 +60,8 @@ public class SeleniumBasicsTest {
     @Test
     @DisplayName("Web Driver Test 1")
     void webDriverTest1() {
-        Past past = (Past)homePage.goToPage("past");
+        Past past = (Past)PageFactory.goToPage("past", webDriver);
+        assert past != null;
         Assertions.assertEquals("https://news.ycombinator.com/front", past.getPast());
     }
 
@@ -79,7 +78,8 @@ public class SeleniumBasicsTest {
     @DisplayName("Date check on all pages")
     @ValueSource(strings = {"month", "day", "year", "default"})
     void dateCheckOnPage(String string) {
-        Past past = (Past)homePage.goToPage("past");
+        Past past = (Past)PageFactory.goToPage("past", webDriver);
+        assert past != null;
         Assertions.assertTrue(past.isCorrectDate(string));
     }
 
@@ -87,7 +87,8 @@ public class SeleniumBasicsTest {
     @DisplayName("Correct date value at top of Page")
     @ValueSource(strings = {"month", "day", "year"})
     void correctDateValueAtTopOfPage(String string) {
-        Past past = (Past)homePage.goToPage("past");
+        Past past = (Past)PageFactory.goToPage("past", webDriver);
+        assert past != null;
         Assertions.assertTrue(past.isCorrectStoriesDate(string));
     }
 
